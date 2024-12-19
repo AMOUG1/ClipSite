@@ -23,7 +23,7 @@
 
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             gap: 10px;
             padding: 20px;
         }
@@ -37,12 +37,14 @@
         .grid-item button {
             width: 100%;
             padding: 0; /* Remove padding to fit image */
-            font-size: 16px;
+            font-size: 50px;
+            font-weight: bold;
+            color: purple;
             cursor: pointer;
-            background-size:auto; /* Change to contain to fit the image */
+            background-size: 100% 100%; /* Change to contain to fit the image */
             background-position: center;
             border: none;
-            height: 200px; /* Set a fixed height for the buttons */
+            height: 300px; /* Set a fixed height for the buttons */
             background-repeat: no-repeat; /* Ensure the image does not repeat */
         }
     </style>
@@ -53,7 +55,7 @@
     <div class="grid-container">
         <div class="grid-item"><button style="background-image: url('/assets/images/camel.jpg');">Pat</button></div>
         <div class="grid-item"><button style="background-image: url('image2.jpg');">Mason</button></div>
-        <div class="grid-item"><button style="background-image: url('image3.jpg');">Jackson</button></div>
+        <div class="grid-item"><button style="background-image: url('/assets/images/jackson.jpg');">Jackson</button></div>
         <div class="grid-item"><button style="background-image: url('image4.jpg');">Fane</button></div>
         <div class="grid-item"><button style="background-image: url('image5.jpg');">Katie</button></div>
         <div class="grid-item"><button style="background-image: url('image6.jpg');">Josh</button></div>
