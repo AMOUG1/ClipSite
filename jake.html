@@ -4,8 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main</title>
+
+    <style>
+        body {
+            background-color: rgb(61, 57, 57);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        h1 {
+            background-color: black;
+            color: rgb(168, 26, 168);
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 100px;
+            padding: 80px;
+        }
+
+        .grid-item {
+            background-color: white;
+            padding: 0px;
+            text-align: center;
+            border-radius: 20px;
+            transition: transform scale(1.2);
+        }
+
+        .grid-item img {
+            width: 100%;
+            padding: 0px; /* Remove padding to fit image */
+            font-size: 50px;
+            font-weight: bold;
+            color: purple;
+            cursor: pointer;
+            background-size: 100% 100%; /* Change to contain to fit the image */
+            background-position: center;
+            border: none;
+            height: 300px; /* Set a fixed height for the buttons */
+            background-repeat: no-repeat; /* Ensure the image does not repeat */
+            border-radius: 20px;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .grid-item img:hover {
+            transform: scale(1.2);
+        }
+        
+
+    </style>
 </head>
 <body>
-    <h1>heh, I aint doin nothing to this until you give me ideas for your page baka</h1>
+    <h1>Jake</h1>
+
+    <div class="grid-container">
+        <div class="grid-item"><img src="assets/images/jake/jake1.jpg" alt="Jake 1"></div>
+        <div class="grid-item"><img src="assets/images/jake/jake2.jpg" alt="Jake 2"></div>
+        <div class="grid-item"><img src="assets/images/jake/jake3.jpg" alt="Jake 3"></div>
+        <div class="grid-item"><img src="assets/images/jake/jake4.jpg" alt="Jake 4"></div>
+        <div class="grid-item"><img src="assets/images/jake/jake5.jpg" alt="Jake 5"></div>
+        <div class="grid-item"><img src="assets/images/jake/jake6.jpg" alt="Jake 6"></div>
+        <div class="grid-item"><img src="assets/images/jake/jake7.jpg" alt="Jake 7"></div>
+        <div class="grid-item"><img src="assets/images/jake/jake8.jpg" alt="Jake 8"></div>
+        <div class="grid-item"><img src="assets/images/jake/jake9.jpg" alt="Jake 9"></div>
+        <div class="grid-item"><img src="assets/images/jake/jake10.jpg" alt="Jake 10"></div>
+    </div>
 </body>
 </html>
