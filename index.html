@@ -24,19 +24,20 @@
         .grid-container {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-            padding: 20px;
+            gap: 100px;
+            padding: 100px;
         }
 
         .grid-item {
             background-color: white;
             padding: 0px;
             text-align: center;
+            border-radius: 20px;
         }
 
         .grid-item button {
             width: 100%;
-            padding: 0; /* Remove padding to fit image */
+            padding: 0px; /* Remove padding to fit image */
             font-size: 50px;
             font-weight: bold;
             color: purple;
@@ -46,6 +47,12 @@
             border: none;
             height: 300px; /* Set a fixed height for the buttons */
             background-repeat: no-repeat; /* Ensure the image does not repeat */
+            transition: transform 0.3s ease;
+            border-radius: 20px;
+        }
+
+        .grid-item button:hover {
+            transform: scale(1.2);
         }
     </style>
 </head>
